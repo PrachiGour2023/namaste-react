@@ -1,17 +1,27 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+/*
+ <div class = "parent">
+   <div class = "child">
+      <h3>Namaste React</h3>
+      <h2>Namaste Javascript<h2>
+   <div>
+ </div>
+*/
+
+// create element using core react
+// reactElement => JS object =>  render(HTML)
+const container = React.createElement(
+  "div",
+  { className: "parent" },
+  React.createElement("div", { className: "child" }, [
+    React.createElement("h3", {}, "Namaste React"),
+    React.createElement("h2", {}, "Namaste Javascript"),
+  ])
 );
+// console.log(container);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+let root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(container);
