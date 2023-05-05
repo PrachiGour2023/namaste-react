@@ -5,4 +5,159 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------- Header Part --------------------------------------- */
+.header {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid #263426;
+  height: 100px;
+}
+
+.logo img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav ul li {
+  list-style-type: none;
+  margin: 0px 30px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #3d4152;
+}
+
+.nav ul li i {
+  font-size: 18px;
+  margin: 0px 8px;
+}
+
+.nav ul li:hover {
+  color: #fc8019;
+}
+
+/*----------------------------------------------- Footer Part --------------------------------------*/
+
+.footer {
+  background: #3d4152;
+  color: #fff;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0px;
+  position: absolute;
+  width: 100%;
+}
+
+.footer p {
+  margin: 0px 10px;
+}
+
+/* ----------------------------------------------- Restaurant -------------------------------------*/
+
+.restaurant {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.filter {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 0px 20px;
+  /* border-bottom: 1px solid #263426; */
+}
+
+.restaurant-card {
+  box-sizing: border-box;
+  width: 300px;
+  height: 350px;
+  padding: 15px;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.restaurant-card:hover {
+  border: 1px solid #daddec;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.card-image {
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+.restaurant-description {
+  padding: 0px;
+  /* line-height: 20px; */
+}
+
+.restaurant-description p {
+  font-size: 13px;
+  color: #676b67;
+  margin: 4px 0px 20px 0px;
+}
+
+.display-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rating {
+  font-size: 10px;
+  background-color: #48c479;
+  color: #fff;
+  padding: 3px 5px;
+  font-weight: 500;
+}
+
+.rating b {
+  margin: 0px 4px;
+}
+
+.time {
+  color: #5e5e5e;
+  font-size: 12px;
+}
+
+.cost {
+  color: #5e5e5e;
+  font-size: 12px;
+}
+
+.discount {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.discount p {
+  font-size: 13px;
+  color: #8a584b;
+  margin: 0px 5px;
+  font-weight: 500;
+}
+
+.discount i {
+  color: #8a584b;
+  font-size: 10px;
 }

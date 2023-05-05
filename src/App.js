@@ -1,7 +1,16 @@
-// import React from "react";
-// import ReactDOM from "react-dom/client";
+import React from "react";
+import Header from "./components/common/Header";
+import Footer from "./components/common/Footer";
+import Restaurant from "./components/restaurant/Restaurant";
 
-// let heading = React.createElement("h1", {}, "Hello React");
-// const root = ReactDOM.createRoot(document.getElementById("root"));
+const AppLayout = () => {
+  return (
+    <>
+      <Header />
+      <Restaurant />
+      {/* <Footer /> */}
+    </>
+  );
+};
 
-// root.render(heading);
+export default AppLayout;
